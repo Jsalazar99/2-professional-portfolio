@@ -1,20 +1,40 @@
-* {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+:root {
+  /* declare CSS variables with `--` syntax */
+  --dark: #13293d;
+  --light: #fff;
+  --navlink-color: #b9c6ae;
+  --pad20: 20px;
 }
 header,
 footer {
     width: 100%;
     height: auto;
-    padding: 20px;
-    background-color:#368727;
+    padding: var(--pad20);
     color: #fff;
     text-shadow: 1px 1px #333;
+}
+header {
+  background-image: linear-gradient( to bottom, #368727, transparent);
+  padding-bottom: 5em;
+  display: flex;
+  justify-content: space-around;
+}
+.intro {
+    display: block;
+}
+nav {
+    width: 45%;
+    float: left;
+    max-width: 600px;
+}
+nav ul li {
+    display: inline-block;
 }
 h1,
 h2 {
     text-align: center;
+    width: 100%;
+    display: block;
 }
 img {
     display: block;
@@ -23,11 +43,15 @@ img {
     margin: auto;
 }
 img.bio {
-    width: 300px;
+    width: 35%;
+    max-width: 300px;
+    border-radius: 0 0 25%;
+    max-height: 350px;
 }
 aside {
     float: left;
 }
+/* flexbox code is going in here */ 
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -36,7 +60,7 @@ aside {
 }
 section {
     color: #000;
-    padding: 20px 0;
+    padding:  var(--pad20) 0;
 }
 ul {
     padding-left: 40px;
@@ -44,7 +68,7 @@ ul {
 }
 p {
     text-align: center;
-    font-size: 30px;
+    font-size: 18px;
   }
   .card {
     width: 45%;
@@ -57,10 +81,14 @@ p {
     background-color: #368727;
     border-color: bisque;
   }
+  footer {
+     background-color:#368727; 
+  }
   footer h4 {
     font-size: 18px;
   }
 
+/* CSS media queries code goes at the bottom */
   @media screen and (max-width: 992px) {
     header {
       
