@@ -2,8 +2,11 @@
   /* declare CSS variables with `--` syntax */
   --dark: #13293d;
   --light: #fff;
-  --navlink-color: #b9c6ae;
+  --navlink-color: rgb(0, 76, 255);
   --pad20: 20px;
+}
+html {
+  scroll-behavior: smooth;
 }
 header,
 footer {
@@ -19,22 +22,44 @@ header {
   display: flex;
   justify-content: space-around;
 }
-.intro {
+div.intro {
     display: block;
+    max-width: 600px;
+}
+div.intro p {
+  padding: var(--pad20) 0;
+  margin: auto;
+  text-align: center;
 }
 nav {
-    width: 45%;
-    float: left;
+    width: 35%;
+    /* float: left; */
+    justify-content: flex-end;
     max-width: 600px;
 }
 nav ul li {
     display: inline-block;
+    margin: 0 10px;
+    text-shadow: 1px 1px 5px #999;
+}
+a {
+  margin: 5px;
+  display: block;
+  color: var(--navlink-color);
+}
+a:hover {
+  color: orange;
+  text-decoration: none;
+}
+a:focus {
+  color: purple;
 }
 h1,
 h2 {
     text-align: center;
     width: 100%;
     display: block;
+    font-size: 4em;
 }
 img {
     display: block;
@@ -47,9 +72,17 @@ img.bio {
     max-width: 300px;
     border-radius: 0 0 25%;
     max-height: 350px;
+    margin-left: 0;
 }
 aside {
     float: left;
+}
+aside ul {
+  max-width: 215px;
+  padding-left: var(--pad20);
+}
+aside a {
+  margin: 10px 0;
 }
 /* flexbox code is going in here */ 
 .container {
@@ -67,37 +100,70 @@ ul {
     font-size: 20px;
 }
 p {
-    text-align: center;
+    text-align: left;
     font-size: 18px;
+    line-height: 1.25;
   }
-  .card {
+.card {
     width: 45%;
     margin: 40px auto;
     border: 1px solid #333;
     border-radius: 5px;
     box-shadow: 5px 5px 2px #888888;
-  }
-  .card:hover {
-    background-color: #368727;
-    border-color: bisque;
-  }
-  footer {
+}
+.card:hover {
+    /*background-color: #35872736;
+    border-color: bisque; */
+    box-shadow: 0 0 5px;
+}
+.card h4 {
+  font-size: 2em;
+  color: #666;
+  margin: 20px;
+  text-align: center; 
+}
+.card p {
+  margin: 25px;
+}
+#contact ul {
+  list-style-type: disc;
+}
+footer {
      background-color:#368727; 
-  }
-  footer h4 {
+}
+footer h4 {
     font-size: 18px;
-  }
+}
 
 /* CSS media queries code goes at the bottom */
   @media screen and (max-width: 992px) {
     header {
-      
+      flex-direction: column;
+    }
+    div.intro {
+      max-width: none;
+      margin: 1em;
+    }
+    nav {
+      width: 100%;
+      justify-content: space-around;
+      max-width: none;
+    }
+    aside {
+      float: none;
+    }  
+    .container  {
+      flex-direction: column;
+    }
+    .card {
+      width: 95%;
+      margin: 1em auto;
     }
   }
   
-  /* Large smartphones - navbar changes color */
+  /* Large smartphones */
   @media screen and (max-width: 768px) {
     nav {
-      
+       text-align: center;
     }
   }
