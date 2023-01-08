@@ -10,6 +10,15 @@ This is the challenge assignment for week 2. Some of the features I incorporated
  - CSS reset file for browser consistency 
  - HTML & CSS comments for source code explaination 
 
+<br>
+
+## Link to deployed site:
+
+[Portfolio Challenge](https://jsalazar99.github.io/2-professional-portfolio/)
+
+
+- - -
+<br>
 
 ## User Story
 
@@ -18,7 +27,6 @@ AS AN employer
 I WANT to view a potential employee's deployed portfolio of work samples
 SO THAT I can review samples of their work and assess whether they're a good candidate for an open position
 ```
-
 
 ## Acceptance Criteria
 
@@ -51,4 +59,4 @@ The following animation shows the web application's appearance and functionality
 
 ![portfolio demo](./Assets/02-advanced-css-homework-demo.gif)
 
-- - -
+
