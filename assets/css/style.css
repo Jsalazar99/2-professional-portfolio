@@ -76,13 +76,14 @@ img.bio {
 }
 aside {
     float: left;
+    margin-right: 15px;
 }
 aside ul {
   max-width: 215px;
   padding-left: var(--pad20);
 }
 aside a {
-  margin: 10px 0;
+  margin: 15px 0;
 }
 /* flexbox code is going in here */ 
 .container {
@@ -90,6 +91,8 @@ aside a {
     flex-wrap: wrap;
     justify-content: space-around;
     /* align-items: flex-start; */
+    border-left: 1px solid #333;
+    margin-bottom: 2em;
 }
 section {
     color: #000;
@@ -106,16 +109,13 @@ p {
   }
 .card {
     width: 45%;
-    margin: 40px auto;
+    margin-bottom: 40px;
     border: 1px solid #333;
     border-radius: 5px;
     box-shadow: 5px 5px 2px #888888;
 }
 .card:hover {
-    /*background-color: #35872736;
-    border-color: bisque; */
     box-shadow: 0 0 5px;
-    width: 33vh;
 }
 .card img {
   width: 100%;
@@ -145,6 +145,16 @@ a.button {
 a.button:hover {
   /* color: #888888; */
   box-shadow: 1px 1px 4px #666;
+}
+#featured {
+  width: 95%;
+}
+#featured img {
+  max-height: 400px;
+  max-width: 650px;
+}
+#featured p {
+  text-align: center;
 }
 #contact ul li {
   list-style-type: disc;
@@ -179,6 +189,7 @@ footer h4 {
     }  
     .container  {
       flex-direction: column;
+      border-left: none;
     }
     .card {
       width: 95%;
