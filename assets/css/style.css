@@ -115,6 +115,7 @@ p {
     /*background-color: #35872736;
     border-color: bisque; */
     box-shadow: 0 0 5px;
+    width: 33vh;
 }
 .card img {
   width: 100%;
@@ -128,6 +129,22 @@ p {
 }
 .card p {
   margin: 25px;
+}
+a.button {
+  display: block;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  max-width: 100px;
+  margin: auto;
+  color: #fff;
+  background-color: #368727;
+  border-radius: 6px;
+  outline: none;
+}
+a.button:hover {
+  /* color: #888888; */
+  box-shadow: 1px 1px 4px #666;
 }
 #contact ul li {
   list-style-type: disc;

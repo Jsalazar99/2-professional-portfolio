@@ -8,7 +8,7 @@ This is the challenge assignment for week 2. Some of the features I incorporated
  - Responsive design utilizing flexbox 
  - Use of CSS variables, psuedo classes, and media queries
  - CSS reset file for browser consistency 
- - HTML & CSS comments for source code explaination 
+ - HTML & CSS comments for source code explanation 
 
 <br>
 
@@ -58,5 +58,6 @@ THEN I am presented with a responsive layout that adapts to my viewport
 The following animation shows the web application's appearance and functionality:
 
 ![portfolio demo](./Assets/02-advanced-css-homework-demo.gif)
+
 
 
