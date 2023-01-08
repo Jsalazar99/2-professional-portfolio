@@ -116,6 +116,10 @@ p {
     border-color: bisque; */
     box-shadow: 0 0 5px;
 }
+.card img {
+  width: 100%;
+  max-height: 320px;
+}
 .card h4 {
   font-size: 2em;
   color: #666;
@@ -125,8 +129,12 @@ p {
 .card p {
   margin: 25px;
 }
-#contact ul {
+#contact ul li {
   list-style-type: disc;
+  margin: 5px;
+}
+#contact ul a {
+  margin: 0;
 }
 footer {
      background-color:#368727; 
